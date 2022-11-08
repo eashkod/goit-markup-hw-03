@@ -2,13 +2,45 @@
   --font-ral: "Roboto", sans-serif;
   --title-color: #212121;
   --text-color: #757575;
-  --hover-color: #2196F3 ;
+  --hover-color: #2196f3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
 }
 
 body {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 .list {
@@ -34,6 +66,8 @@ body {
   font-family: inherit;
   text-align: center;
   cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid transparent;
 }
 
 .logo {
@@ -49,9 +83,26 @@ body {
 }
 .logo-color-black {
   color: #000000;
+  margin-right: 93px;
 }
 
 /* -----------------HEADER---------------- */
+.header-container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  align-items: center;
+}
+
+.navigation {
+  margin-right: auto;
+}
+
+.header-nav {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
 
 .header-nav-link {
   font-weight: 500;
@@ -64,6 +115,12 @@ body {
 .header-nav-link:focus,
 .header-nav-link.current {
   color: var(--hover-color);
+}
+
+.contact {
+  list-style: none;
+  display: flex;
+  gap: 50px;
 }
 
 .contact-link {
@@ -80,28 +137,47 @@ body {
 
 .hero {
   background-color: #2f303a;
+  padding: 200px 0;
 }
 
 .hero-title {
+  display: block;
+  margin: 0 auto;
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
-
+  text-transform: uppercase;
+  margin-bottom: 30px;
   color: #ffffff;
 }
 
 .hero-btn {
+  display: block;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: #ffffff /*var(--btn-color)*/;
+  padding: 10px 32px;
+
+  color: #ffffff;
   background-color: var(--hover-color);
 }
 
 /*-----------Особливості-------*/
+
+.features {
+  padding-top: 94px;
+}
+
+.features-list {
+  display: flex;
+  gap: 30px;
+}
+
 .features-title {
   opacity: 0;
 }
@@ -116,12 +192,38 @@ body {
   color: var(--text-color);
 }
 
+/*--------Чим ми займаємося----------*/
+
+.our-work {
+  padding-top: 94px;
+}
+
+.our-work-list {
+  display: flex;
+  gap: 30px;
+}
+
+.our-work-item {
+  width: calc((100% - 60px) / 3);
+}
+
 /*--------Наша команда----------*/
+
+.our-team {
+  padding-top: 94px;
+  background-color: #f5f4fa;
+}
+
+.our-team-list {
+  display: flex;
+  gap: 30px;
+}
 
 .our-team-memeber {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
+  /*margin-top: 30px;*/
   text-align: center;
   color: var(--title-color);
 }
@@ -130,18 +232,36 @@ body {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 30px;
   color: var(--text-color);
+}
+
+.our-team-item {
+  background-color: #ffffff;
+  margin-bottom: 94px;
+  width: calc((100% - 90px) / 4);
 }
 
 /* -----------------CONTaCTS---------------- */
 
 .contacts {
   background-color: #2f303a;
+  padding: 60px 0;
 }
 
 .contacts-address {
   font-style: normal;
 }
+
+.contacts-list {
+  padding-top: 20px;
+}
+
+.contacts-item {
+  margin: 9px;
+}
+
 .contact-addres-link {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
@@ -159,12 +279,23 @@ body {
 .portfolio-title {
   opacity: 0;
 }
+
+.portfolio-filter {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
 .portfolio-btn {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
+  padding: 6px 22px;
   color: #212121;
   background-color: #f5f4fa;
+  margin-top: 100px;
+  margin-bottom: 56px;
 }
 
 .portfolio-btn:hover,
@@ -174,11 +305,22 @@ body {
   background-color: var(--hover-color);
 }
 
+.portfolio-project {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
 .portfolio-project-title {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
+}
+
+.portfolio-project-list {
+  width: calc((100% - 60px) / 3);
 }
 
 .portfolio-project-text {
