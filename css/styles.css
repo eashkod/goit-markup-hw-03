@@ -194,6 +194,10 @@ padding-bottom: 94px;
    overflow: hidden;
  }
 
+.features{
+  margin-bottom: 0;
+}
+
 .features-list {
   display: flex;
   gap: 30px;
@@ -254,8 +258,8 @@ padding-bottom: 94px;
 }
 
 .our-team-item-in{
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* -----------------CONTaCTS---------------- */
@@ -294,6 +298,8 @@ padding-bottom: 94px;
 
 /* -----------------Portfolio PAGE---------------- */
 
+.portfolio
+
 .portfolio-filter {
   margin-bottom: 50px;
   display: flex;
@@ -325,8 +331,11 @@ padding-bottom: 94px;
   gap: 30px;
 }
 
-.portfolio-project-title {
-  margin-top: 20px;
+.portfolio-project-title{
+  padding-top: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -335,16 +344,16 @@ padding-bottom: 94px;
 
 .portfolio-project-list-border {
   border: 1px solid #EEEEEE;
-  min-width: 368px;
-  width: calc((100% - 60px) / 3);
+  min-width: 368px;  
 }
 .portfolio-project-list {
-  width: calc((100% - 60px) / 3);
+ width: calc((100% - 60px) / 3);
 }
 
 .portfolio-project-text {
-  margin-top: 4px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-color);
