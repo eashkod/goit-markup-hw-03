@@ -36,10 +36,10 @@ body {
 }
 
 .container {
-  width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1200px;
   margin: 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
   outline: 2px solid red;
 }
 
@@ -51,7 +51,13 @@ body {
   text-decoration: none;
 }
 
+.section{
+padding-top: 94px;
+padding-bottom: 94px;
+}
+
 .section-title {
+  margin-bottom: 50px;
   font-family: var(--font-ral);
   font-size: 36px;
   line-height: 1.17;
@@ -59,7 +65,8 @@ body {
 }
 
 .section-text {
-  line-height: 1, 71;
+  margin-top: 10px;
+  line-height: 1.71;
 }
 
 .btn {
@@ -87,10 +94,14 @@ body {
 }
 
 /* -----------------HEADER---------------- */
-.header-container {
-  display: flex;
+
+.header{
   padding-top: 24px;
   padding-bottom: 25px;
+}
+
+.header-container {
+  display: flex;
   align-items: center;
 }
 
@@ -137,7 +148,8 @@ body {
 
 .hero {
   background-color: #2f303a;
-  padding: 200px 0;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -169,17 +181,22 @@ body {
 
 /*-----------Особливості-------*/
 
-.features {
-  padding-top: 94px;
-}
+ .visually-hidden {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   margin: -1px;
+   border: 0;
+   padding: 0;
+   white-space: nowrap;
+   clip-path: inset(100%);
+   clip: rect(0 0 0 0);
+   overflow: hidden;
+ }
 
 .features-list {
   display: flex;
   gap: 30px;
-}
-
-.features-title {
-  opacity: 0;
 }
 
 .features-item-titel {
@@ -189,14 +206,11 @@ body {
 }
 
 .features-item-text {
+  min-width: 270px;
   color: var(--text-color);
 }
 
 /*--------Чим ми займаємося----------*/
-
-.our-work {
-  padding-top: 94px;
-}
 
 .our-work-list {
   display: flex;
@@ -210,7 +224,6 @@ body {
 /*--------Наша команда----------*/
 
 .our-team {
-  padding-top: 94px;
   background-color: #f5f4fa;
 }
 
@@ -223,7 +236,6 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /*margin-top: 30px;*/
   text-align: center;
   color: var(--title-color);
 }
@@ -233,35 +245,43 @@ body {
   line-height: 1.19;
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 30px;
   color: var(--text-color);
 }
 
 .our-team-item {
   background-color: #ffffff;
-  margin-bottom: 94px;
   width: calc((100% - 90px) / 4);
+}
+
+.our-team-item-in{
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* -----------------CONTaCTS---------------- */
 
 .contacts {
   background-color: #2f303a;
-  padding: 60px 0;
 }
+.footer-container{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 
 .contacts-address {
   font-style: normal;
+  margin-top: 20px;
 }
 
-.contacts-list {
-  padding-top: 20px;
-}
 
 .contacts-item {
-  margin: 9px;
+  margin-bottom: 9px;
 }
 
+.contacts-item:last-child {
+  margin-bottom: 0;
+}
 .contact-addres-link {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
@@ -271,16 +291,11 @@ body {
   color: #ffffff;
 }
 
-.contacts-title {
-  opacity: 0;
-}
 
 /* -----------------Portfolio PAGE---------------- */
-.portfolio-title {
-  opacity: 0;
-}
 
 .portfolio-filter {
+  margin-bottom: 50px;
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -294,8 +309,6 @@ body {
   padding: 6px 22px;
   color: #212121;
   background-color: #f5f4fa;
-  margin-top: 100px;
-  margin-bottom: 56px;
 }
 
 .portfolio-btn:hover,
@@ -313,17 +326,25 @@ body {
 }
 
 .portfolio-project-title {
+  margin-top: 20px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-color);
 }
 
+.portfolio-project-list-border {
+  border: 1px solid #EEEEEE;
+  min-width: 368px;
+  width: calc((100% - 60px) / 3);
+}
 .portfolio-project-list {
   width: calc((100% - 60px) / 3);
 }
 
 .portfolio-project-text {
+  margin-top: 4px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-color);

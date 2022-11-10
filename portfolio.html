@@ -25,7 +25,7 @@
               <a class="header-nav-link link" href="./index.html">Студія</a>
             </li>
             <li>
-              <a class="header-nav-link link current" href="./portfolio.html"
+              <a class="header-nav-link link current" href="#"
                 >Портфоліо</a
               >
             </li>
@@ -49,9 +49,9 @@
     </header>
 
     <main>
-      <section>
+      <section class="section">
         <div class="container">
-          <h1 class="portfolio-title">Портфоліо</h1>
+          <h1 class="portfolio-title visually-hidden">Портфоліо</h1>
           <ul class="portfolio-filter list">
             <li class="portfolio-filter-btn">
               <button type="button" class="portfolio-btn btn">Усі</button>
@@ -78,8 +78,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-project-title">Технокряк</h2>
-                <p class="portfolio-project-text">Веб-сайт</p>
+                <div class="portfolio-project-list-border">
+                  <h2 class="portfolio-project-title">Технокряк</h2>
+                  <p class="portfolio-project-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-project-list">
@@ -90,10 +92,12 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-project-title">
-                  Постер New Orlean vs Golden Star
-                </h2>
-                <p class="portfolio-project-text">Дизайн</p>
+                <div class="portfolio-project-list-border">
+                  <h2 class="portfolio-project-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="portfolio-project-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-project-list">
@@ -104,8 +108,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-project-title">Ресторан Seafood</h2>
-                <p class="portfolio-project-text">Додаток</p>
+                <div class="portfolio-project-list-border">
+                  <h2 class="portfolio-project-title">Ресторан Seafood</h2>
+                  <p class="portfolio-project-text">Додаток</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-project-list">
@@ -116,6 +122,7 @@
                   width="370"
                   height="294"
                 />
+                <div class="portfolio-project-list-border"></div>
                 <h2 class="portfolio-project-title">Проєкт Prime</h2>
                 <p class="portfolio-project-text">Маркетинг</p>
               </a>
@@ -128,6 +135,7 @@
                   width="370"
                   height="294"
                 />
+                <div class="portfolio-project-list-border"></div>
                 <h2 class="portfolio-project-title">Проєкт Boxes</h2>
                 <p class="portfolio-project-text">Додаток</p>
               </a>
@@ -140,11 +148,14 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-project-title">
+                <div class="portfolio-project-list-border">
+                  <h2 class="portfolio-project-title">
                   Inspiration has no Borders
                 </h2>
                 <p class="portfolio-project-text">Веб-сайт</p>
               </a>
+                </div>
+                
             </li>
             <li class="portfolio-project-list">
               <a class="portfolio-project-list link" href="#">
@@ -154,8 +165,12 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-project-title">Видання Limited Edition</h2>
-                <p class="portfolio-project-text">Дизайн</p>
+                <div class="portfolio-project-list-border">
+                  <h2 class="portfolio-project-title">
+                    Видання Limited Edition
+                  </h2>
+                  <p class="portfolio-project-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-project-list">
@@ -166,8 +181,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-project-title">Проєкт LAB</h2>
-                <p class="portfolio-project-text">Маркетинг</p>
+                <div class="portfolio-project-list-border">
+                  <h2 class="portfolio-project-title">Проєкт LAB</h2>
+                  <p class="portfolio-project-text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="portfolio-project-list">
@@ -178,8 +195,10 @@
                   width="370"
                   height="294"
                 />
-                <h2 class="portfolio-project-title">Growing Business</h2>
-                <p class="portfolio-project-text">Додаток</p>
+                <div class="portfolio-project-list-border">
+                  <h2 class="portfolio-project-title">Growing Business</h2>
+                  <p class="portfolio-project-text">Додаток</p>
+                </div>
               </a>
             </li>
           </ul>
@@ -187,41 +206,39 @@
       </section>
     </main>
 
-    <footer>
-      <section class="contacts">
-        <div class="container">
-          <h2 class="contacts-title">Контакти</h2>
-          <a class="logo link" href="./index.html"
-            >Web<span class="logo-color-white">Studio</span></a
-          >
-          <address class="contacts-address">
-            <ul class="contacts-list">
-              <li class="contacts-item">
-                <a
-                  class="contact-link-color link"
-                  href="https://goo.gl/maps/FN6LfRU.C86sZ6Rwg6"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  м. Київ, пр-т Лесі Українки, 26</a
-                >
-              </li>
-              <li class="contacts-item">
-                <a
-                  class="contact-addres-link link"
-                  href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
-              </li>
-              <li class="contacts-item">
-                <a class="contact-addres-link link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-          </address>
-        </div>
-      </section>
+    <footer class="contacts">
+      <div class="container footer-container">
+        <h2 class="contacts-title visually-hidden">Контакти</h2>
+        <a class="logo link" href="./index.html"
+          >Web<span class="logo-color-white">Studio</span></a
+        >
+        <address class="contacts-address">
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a
+                class="contact-link-color link"
+                href="https://goo.gl/maps/FN6LfRU.C86sZ6Rwg6"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                м. Київ, пр-т Лесі Українки, 26</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a
+                class="contact-addres-link link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a class="contact-addres-link link" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
     </footer>
   </body>
 </html>
