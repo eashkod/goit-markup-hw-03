@@ -40,7 +40,7 @@ body {
   margin: 0 auto;
   padding-right: 15px;
   padding-left: 15px;
-  outline: 2px solid red;
+  /*outline: 2px solid red;*/
 }
 
 .list {
@@ -49,11 +49,6 @@ body {
 
 .link {
   text-decoration: none;
-}
-
-.section{
-padding-top: 94px;
-padding-bottom: 94px;
 }
 
 .section-title {
@@ -83,6 +78,7 @@ padding-bottom: 94px;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  margin-right: 93px;
   color: var(--hover-color);
 }
 .logo-color-white {
@@ -90,7 +86,6 @@ padding-bottom: 94px;
 }
 .logo-color-black {
   color: #000000;
-  margin-right: 93px;
 }
 
 /* -----------------HEADER---------------- */
@@ -195,7 +190,8 @@ padding-bottom: 94px;
  }
 
 .features{
-  margin-bottom: 0;
+  padding-top: 94px;
+  padding-bottom: 118px;
 }
 
 .features-list {
@@ -216,6 +212,10 @@ padding-bottom: 94px;
 
 /*--------Чим ми займаємося----------*/
 
+.our-work{
+    padding-bottom: 94px;
+}
+
 .our-work-list {
   display: flex;
   gap: 30px;
@@ -229,6 +229,8 @@ padding-bottom: 94px;
 
 .our-team {
   background-color: #f5f4fa;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .our-team-list {
@@ -278,14 +280,13 @@ padding-bottom: 94px;
   margin-top: 20px;
 }
 
+.contacts-item{margin-top: 9px;}
 
-.contacts-item {
-  margin-bottom: 9px;
+.contacts-item:first-child{
+  margin-top: 0;
 }
 
-.contacts-item:last-child {
-  margin-bottom: 0;
-}
+
 .contact-addres-link {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
@@ -298,7 +299,9 @@ padding-bottom: 94px;
 
 /* -----------------Portfolio PAGE---------------- */
 
-.portfolio
+.header-container-portfolio{
+  border: 1px solid #ECECEC;
+}
 
 .portfolio-filter {
   margin-bottom: 50px;
@@ -332,9 +335,7 @@ padding-bottom: 94px;
 }
 
 .portfolio-project-title{
-  padding-top: 20px;
-  padding-left: 24px;
-  padding-right: 24px;
+
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
@@ -343,7 +344,14 @@ padding-bottom: 94px;
 }
 
 .portfolio-project-list-border {
-  border: 1px solid #EEEEEE;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-bottom: 1px solid #ECECEC;
+  border-right: 1px solid #ECECEC;
+  border-left: 1px solid #ECECEC;
+
   min-width: 368px;  
 }
 .portfolio-project-list {
@@ -351,9 +359,7 @@ padding-bottom: 94px;
 }
 
 .portfolio-project-text {
-  padding-bottom: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
+
   font-size: 16px;
   line-height: 1.88;
   color: var(--text-color);
